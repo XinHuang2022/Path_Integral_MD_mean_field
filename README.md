@@ -19,6 +19,13 @@ The main function can be accessed through the file named `TesterPIMC_BB.m`, with
 *  `Nestim0`: the number of independent replicas of partition function $Z$ and mean-field $h$ estimators, with each estimator based on 2^Mxmax0 samples to approximate the Monte Carlo integral.
 *  `Ncore0`: the number of parallel workers for evaluating all the 2^Nestim0 estimators.
 
+A simple example with implementation at the inverse temperature $\beta=1$ with $n=6$ particles in dimension $d=3$ can be achieved with the following input values:
+
+
+
+## Usage Reference
+
+
 
 
  
