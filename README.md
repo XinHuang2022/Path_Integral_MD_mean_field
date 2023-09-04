@@ -1,2 +1,8 @@
-# Test_code_PIMC_FK
+# Implementation of path integral molecular dynamics approximation
+
+## Purpose
+
+
+
+
  
