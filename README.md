@@ -9,7 +9,7 @@ Two cases with different forms of potential are tested, namely:
 
 ## Getting Started
 
-The main function can be accessed through the file named `TesterPIMC_BB.m`, with the following specification of the input arguments:
+The main function can be accessed through the file named `TesterPIMD_BB.m`, with the following specification of the input arguments:
 *  `dim0`: the dimensionality of the space.
 *  `Ne0`: the number of electrons.
 *  `beta0`: the inverse temperature $1 / ( k_B * T )$.
