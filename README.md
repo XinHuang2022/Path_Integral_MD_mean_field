@@ -33,7 +33,7 @@ With $\mathrm{Mxmax0} = 12$ and $\mathrm{Nrep0}=8$, a total sample set of size $
 ### Regarding the choice of sample size
 Since the Monte Carlo method is applied to approximate a high-dimensional integral, the sample size parameter $\mathrm{Mxmax0}$ should be sufficiently large.
 
-Specifically in the code, it is assumed that $\mathrm{Mxmax0}\geq 6$, so that at least $2^6=64$ independent estimators are generated for each replica. Otherwise if $\mathrm{Mxmax0}< 6$ the code may return an error, and the statistics part will not be implemented. Moreover, as the inverse temperature parameter $\beta$ increases, the sample size should accordingly increase fast, due to the exponentially increasing sample variance.
+Specifically in the code, it is assumed that $\mathrm{Mxmax0}\geq 6$, so that at least $2^6=64$ independent estimators are generated for each replica. Otherwise the code may return an error, and the statistics part will not be implemented. Moreover, as the inverse temperature parameter $\beta$ increases, the sample size should accordingly increase fast, due to the exponentially increasing sample variance.
 
 ### Regarding the choice of time step size $\Delta t$
 In this implementation for simplicity, the number of time slices $M=\beta/\Delta t$ on the region $[0,\beta]$ is assumed to be an integer. 
