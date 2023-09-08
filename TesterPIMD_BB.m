@@ -8,13 +8,13 @@ datadir0='./';
 dim0 = '3';
 Ne0 = '6';
 beta0 = '1';
-lambda0 = '0.5';
-dt0 = '0.05';
+lambda0 = '0';
+dt0 = '0.025';
 Mxmax0 = '12';
 dMx0 = '0.5';
 Nrep0 = '8';
-Ncore0 = '12';
-TestCase0 = "V2";
+Ncore0 = '4';
+TestCase0 = "V1";
 
 exitcode = PIMC_BB_sampling_run_improve(filename0, lulog0, datadir0, ...
     dim0, Ne0, beta0, lambda0, dt0, Mxmax0, dMx0, Nrep0, Ncore0, TestCase0)
@@ -25,7 +25,8 @@ exitcode = PIMC_BB_sampling_run_improve(filename0, lulog0, datadir0, ...
 % beta0:     the inverse temperature 1 / ( k_B * T ).
 % lambda0:   the relative force parameter of Coulomb interactions. 
 %            For the fermi gas case under Harmonic Oscillator potential 
-%            without Coulomb interactions, lambda = 0.
+%            without Coulomb interactions, lambda will be automatically 
+%            set to 0.
 % dt0:       the time step for the integration in the exponent of the 
 %            Feymann-Kac representation.
 % 2^Mxmax0:  the sample size for each independent estimator of partition 
