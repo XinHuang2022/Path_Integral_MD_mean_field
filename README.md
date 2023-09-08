@@ -14,7 +14,7 @@ The main function can be accessed through the file named `TesterPIMD_BB.m`, with
 *  `Ne0`: the number of electrons.
 *  `beta0`: the inverse temperature $1 / ( k_B * T )$.
 *  `dt0`: the time step for the integration in the exponent of the Feymann-Kac representation.
-*  `Mxmax0`: an integer for the exponent of the sample size $N$ for the independent estimators of partition function $Z$ and mean-field $h$, i.e., $N$ equals to $2$ to the power of $\mathrm{Mxmax0}$.
+*  `Mxmax0`: an integer for the exponent of the sample size $N$ of independent estimators of partition function $Z$ and mean-field $h$, i.e., $N$ equals to $2$ to the power of $\mathrm{Mxmax0}$.
 *  `dMx0`: when plotting the figures to test the convergence of estimators with increasing sample size, the distance between two data points in the $x$-axis.
 *  `Nrep0`: the number of independent replicas of partition function $Z$ and mean-field $h$ estimators, with each replica generates and stores $2^\mathrm{Mxmax0}$ samples to approximate the Monte Carlo integral.
 *  `Ncore0`: the number of parallel workers for evaluating all the $2^{\mathrm{Nrep0}}\times 2^\mathrm{Mxmax0}$ estimators.
