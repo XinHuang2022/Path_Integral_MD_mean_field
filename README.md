@@ -36,7 +36,7 @@ Since the Monte Carlo method is applied to approximate a high-dimensional integr
 
 Specifically in the code, it is assumed that $\mathrm{Mxmax0}\geq 6$, so that at least $2^6=64$ independent estimators are generated for each replica. Otherwise the code may return an error, and the statistics part will not be implemented. Moreover, as the inverse temperature parameter $\beta$ increases, the sample size should accordingly increase fast, due to the exponentially increasing sample variance.
 
-### Regarding the choice of time step size $\Delta t$
+### Regarding the choice of time step size
 In this implementation for simplicity, the number of time slices $M=\beta/\Delta t$ on the region $[0,\beta]$ is assumed to be an integer. 
 
 For example, given $\beta=1.5$, selecting $\Delta t=0.03$ leads to $M=50$ time slices, which produces a good approximation. 
