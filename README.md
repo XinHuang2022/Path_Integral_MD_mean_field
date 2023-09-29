@@ -41,12 +41,8 @@ In this implementation for simplicity, the number of time slices $M=\beta/\Delta
 
 For example, given $\beta=1.5$, selecting $\Delta t=0.03$ leads to $M=50$ time slices, which produces a good approximation. 
 
-However for $\beta=1$ with $\Delta t=0.03$ we have $M=33.3$ which is non-integer and can lead to some instability of the performance of the programme. It is recommended to always choose $\Delta t$ such that $M$ is divisible by it. Hence for the latter case, a recommended time step value is $\Delta t = 0.025$ or $\Delta t = 0.0125$, leading to $M=40$ or $M=80$ time slices respectively.
+However for $\beta=1$ with $\Delta t=0.03$ we have $M=33.3$ which is non-integer and can lead to some instability of the performance of the programme. It is recommended to always choose $\Delta t$ such that $M$ is divisible by it. Hence for the latter case, a recommended time step value is $\Delta t = 0.025$ or $\Delta t = 0.0125$, leading to $M=40$ or $M=80$ time slices, respectively.
 
-### Regarding the parallelization with the number of replicas
-In order to achieve an optimized efficiency, it is recommended to have $2^{\mathrm{Nrep0}}$ larger than the number of CPU-cores available for this computation, so that the workload between all the processors are balanced.
-
-Besides, if this code is run with **MATLAB** version `R2023a`, the largest number of parallel workers is recommended to not exceed 100, i.e., $\mathrm{Ncore0}\leq 100$.  This problem is hopefully fixed with the updated version of **MATLAB** `R2023b`.
 
 
 
