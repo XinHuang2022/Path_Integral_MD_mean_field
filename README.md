@@ -41,7 +41,7 @@ In this implementation for simplicity, the number of time slices $M=\beta/\Delta
 
 For example, given $\beta=1.5$, selecting $\Delta t=0.03$ leads to $M=50$ time slices, which produces a good approximation. 
 
-However for $\beta=1$ with $\Delta t=0.03$ we have $M=33.3$ which is non-integer and can lead to some instability of the performance of the programme. It is recommended to always choose $\Delta t$ such that $M$ is divisible by it. Hence for the latter case, a recommended time step value is $\Delta t = 0.025$ or $\Delta t = 0.0125$, leading to $M=40$ or $M=80$ time slices, respectively.
+However for $\beta=1$ with $\Delta t=0.03$ we have $M=33.3$ which is non-integer and can lead to some instability of the performance of the programme. It is recommended to always choose $\Delta t$ such that $\beta$ is divisible by it. Hence for the latter case, a recommended time step value is $\Delta t = 0.025$ or $\Delta t = 0.0125$, leading to $M=40$ or $M=80$ time slices, respectively.
 
 
 
